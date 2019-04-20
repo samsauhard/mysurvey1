@@ -56,7 +56,6 @@ __webpack_require__.r(__webpack_exports__);
 
 
 var routes = [
-    { path: '/', component: _pages_home_home_component__WEBPACK_IMPORTED_MODULE_3__["HomeComponent"], data: { title: 'Home' } },
     { path: 'home', component: _pages_home_home_component__WEBPACK_IMPORTED_MODULE_3__["HomeComponent"], data: { title: 'Home' } },
     { path: 'dashboard', component: _pages_home_home_component__WEBPACK_IMPORTED_MODULE_3__["HomeComponent"], data: { title: 'Home' } },
     { path: 'about', component: _pages_about_about_component__WEBPACK_IMPORTED_MODULE_4__["AboutComponent"], data: { title: 'About' } },
@@ -64,9 +63,9 @@ var routes = [
     { path: 'surveys/survey-list/', component: _pages_surveys_surveys_component__WEBPACK_IMPORTED_MODULE_6__["SurveysComponent"], data: { title: 'Surveys' }, canActivate: [_guards_auth_guard__WEBPACK_IMPORTED_MODULE_9__["AuthGuard"]] },
     { path: 'surveys/survey-list/:id', component: _pages_survey_ans_survey_ans_component__WEBPACK_IMPORTED_MODULE_10__["SurveyAnsComponent"], data: { title: 'Answer Survey' }, canActivate: [_guards_auth_guard__WEBPACK_IMPORTED_MODULE_9__["AuthGuard"]] },
     { path: 'register', component: _pages_register_register_component__WEBPACK_IMPORTED_MODULE_7__["RegisterComponent"], data: { title: 'Register' } },
-    { path: 'login', component: _pages_login_login_component__WEBPACK_IMPORTED_MODULE_8__["LoginComponent"], data: { title: 'Register' } },
+    { path: 'login', component: _pages_login_login_component__WEBPACK_IMPORTED_MODULE_8__["LoginComponent"], data: { title: 'Login' } },
     { path: 'logout', redirectTo: '/login', pathMatch: 'full' },
-    { path: '', redirectTo: '/home', pathMatch: 'full' },
+    { path: '', redirectTo: 'home', pathMatch: 'full' },
     { path: '**', component: _pages_pagenotfound_pagenotfound_component__WEBPACK_IMPORTED_MODULE_5__["PagenotfoundComponent"] }
 ];
 var AppRoutingModule = /** @class */ (function () {
@@ -1222,7 +1221,7 @@ var SurveyListService = /** @class */ (function () {
     function SurveyListService(http) {
         this.http = http;
         this.authToken = null;
-        this.endpoint = 'https://surveyappmean.herokuapp.com/surveys/survey-list/';
+        this.endpoint = 'http://surveyappmean:3000/surveys/survey-list/';
         //private endpoint = 'https://portfoliomean.herokuapp.com/api/contact-list/';
         this.httpOptions = {
             headers: new _angular_common_http__WEBPACK_IMPORTED_MODULE_2__["HttpHeaders"]({

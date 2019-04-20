@@ -8,8 +8,8 @@ import { RegisterComponent } from './pages/register/register.component';
 import { LoginComponent } from './pages/login/login.component';
 import { AuthGuard } from './guards/auth.guard';
 import { SurveyAnsComponent } from './pages/survey-ans/survey-ans.component';
-const routes: Routes = [
-  
+
+const routes: Routes = [ 
   {path: 'home', component: HomeComponent, data: {title: 'Home'}},
   {path: 'dashboard', component: HomeComponent, data: {title: 'Home'}},
   {path: 'about', component: AboutComponent, data: {title: 'About'}},
@@ -18,10 +18,10 @@ const routes: Routes = [
   {path: 'surveys/survey-list/:id', component: SurveyAnsComponent, data: {title: 'Answer Survey'},canActivate: [AuthGuard]},
 
   {path: 'register', component: RegisterComponent, data: {title: 'Register'}},
-  {path: 'login', component: LoginComponent, data: {title: 'Register'}},
+  {path: 'login', component: LoginComponent, data: {title: 'Login'}},
   {path: 'logout', redirectTo: '/login', pathMatch: 'full'},
 
-  {path: '', redirectTo: '/home', pathMatch: 'full'},
+  {path: '', redirectTo: 'home', pathMatch: 'full'},
   {path: '**', component: PagenotfoundComponent}
 ];
 
