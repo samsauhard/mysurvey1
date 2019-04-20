@@ -56,6 +56,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 var routes = [
+    { path: '/', component: _pages_home_home_component__WEBPACK_IMPORTED_MODULE_3__["HomeComponent"], data: { title: 'Home' } },
     { path: 'home', component: _pages_home_home_component__WEBPACK_IMPORTED_MODULE_3__["HomeComponent"], data: { title: 'Home' } },
     { path: 'dashboard', component: _pages_home_home_component__WEBPACK_IMPORTED_MODULE_3__["HomeComponent"], data: { title: 'Home' } },
     { path: 'about', component: _pages_about_about_component__WEBPACK_IMPORTED_MODULE_4__["AboutComponent"], data: { title: 'About' } },
@@ -1339,7 +1340,7 @@ Object(_angular_platform_browser_dynamic__WEBPACK_IMPORTED_MODULE_1__["platformB
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! E:\mysurvey\mysurvey\client\src\main.ts */"./src/main.ts");
+module.exports = __webpack_require__(/*! E:\mysurvey\client\src\main.ts */"./src/main.ts");
 
 
 /***/ })
