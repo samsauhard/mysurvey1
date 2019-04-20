@@ -14,7 +14,7 @@ export class SurveyListService {
   private user: User;
   private authToken: any = null;
   private authService: AuthService;
-  private endpoint = 'https://surveyappmean.herokuapp.com/surveys/survey-list/';
+  private endpoint = 'http://localhost:3000/surveys/survey-list/';
 
   //private endpoint = 'https://portfoliomean.herokuapp.com/api/contact-list/';
 
